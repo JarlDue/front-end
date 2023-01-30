@@ -1,0 +1,32 @@
+/* Some styles for the form */
+form {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+}
+label {
+  font-weight: bold;
+}
+input[type="text"], input[type="email"], select {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+input[type="submit"] {
+  background-color: black;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type="submit"]:hover {
+  background-color: gray;
+}
+.error {
+  color: red;
+}

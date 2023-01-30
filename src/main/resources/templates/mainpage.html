@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Shadow DOM with Template Import Example</title>
+  <script src="https://unpkg.com/unpoly@2.7.1/unpoly.min.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/unpoly@2.7.1/unpoly.min.css">
+</head>
+<h1>Welcome to our Booking Portal</h1>
+
+<body>
+  <nav>
+    <ul>
+      <li>Home</li>
+      <li>About</li>
+      <li>Contact</li>
+    </ul>
+  </nav>
+
+  <div class="main-content">
+    <aside class="site-content">
+      <ul>
+    <li><a href="/some-page?class=dance.html">Dance Lessons</a></li>
+    <li><a href="/some-page?class=yoga.html">Yoga Classes</a></li>
+    <li><a href="/some-page?class=http://localhost:8085/some-page">Fitness Training</a></li>
+      </ul>
+    </aside>
+
+    <div class="center-container">
+      <div id="host"></div>
+    </div>
+  </div>
+
+  <style>
+    nav {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav li {
+      display: inline-block;
+      margin-right: 20px;
+    }
+
+    .main-content {
+      display: flex;
+    }
+
+    .site-content {
+      width: 200px;
+      background-color: #f2f2f2;
+      padding: 20px;
+    }
+
+    .center-container {
+      margin: 0 auto;
+      width: 80%;
+    }
+  </style>
+
+  <div id="host"></div>
+
+  <script>
+    var templateUrl = '{templateUrl}';
+    var hostId = 'host';
+  </script>
+
+  <script src="js/testDom.js">
+  </script>
+</body>
+
+</html>

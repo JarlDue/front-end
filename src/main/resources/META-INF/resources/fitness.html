@@ -1,0 +1,59 @@
+  <style>
+    /* Some styles for the form */
+    form {
+      padding: 20px;
+      background-color: #f9f9f9;
+      border: 1px solid #ddd;
+    }
+    label {
+      font-weight: bold;
+    }
+    input[type="text"], input[type="email"], select {
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-top: 6px;
+      margin-bottom: 16px;
+      resize: vertical;
+    }
+    input[type="submit"] {
+      background-color: black;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    input[type="submit"]:hover {
+      background-color: gray;
+    }
+    .error {
+      color: red;
+    }
+  </style>
+  <button class="ms-button">Click me</button>
+
+  <form id="signup-form">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    <label for="fitness-class">Preferred Fitness Class:</label>
+    <select id="fitness-class" name="fitness-class">
+      <option value="">Select a class</option>
+      <option value="crossfit">Crossfit</option>
+      <option value="weightlifting">Weightlifting</option>
+      <option value="powerlifting">Powerlifting</option>
+      <option value="strongman">Strongman</option>
+    </select>
+    <label for="experience-level">Experience Level:</label>
+    <input type="radio" id="beginner" name="experience-level" value="beginner" required>
+    <label for="beginner">Beginner</label>
+    <input type="radio" id="intermediate" name="experience-level" value="intermediate">
+    <label for="intermediate">Intermediate</label>
+    <input type="radio" id="advanced" name="experience-level" value="advanced">
+    <label for="advanced">Advanced</label>
+    <input class="ms-input" type="submit" value="Signup">
+  </form>
+  <div id="error-message" class="error"></div>
